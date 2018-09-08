@@ -11,7 +11,7 @@ print(u'\n转换完毕。')
 #del b #删除中间变量b，节省内存
 
 support = 0.01  #最小支持度
-confidence = 0.01 #最小置信度
+confidence = 0.1 #最小置信度
 ms = '---' #连接符，默认'--'，用来区分不同元素，如A--B。需要保证原始表格中不含有该字符
 
 result = ap.find_rule(df_class, support, confidence, ms).to_excel('.../result.xlsx')
